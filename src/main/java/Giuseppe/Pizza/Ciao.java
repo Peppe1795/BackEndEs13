@@ -52,7 +52,7 @@ public class Ciao {
 	}
 
 	@Bean
-	public void getToppings() {
+	public List<Toppings> getToppings() {
 		List<Toppings> topping = new ArrayList<>();
 		Toppings top1 = new Toppings("Cheese", 1.50, 1500.5);
 		Toppings top2 = new Toppings("Salami", 2.50, 2500.4);
@@ -63,7 +63,7 @@ public class Ciao {
 		topping.add(top3);
 		topping.add(top4);
 
-		log.info(topping.toString());
+		return topping;
 
 	}
 }
